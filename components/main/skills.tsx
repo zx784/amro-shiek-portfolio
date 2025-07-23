@@ -42,9 +42,12 @@ export const Skills = () => {
       { threshold: 0.1 }
     );
 
-    const element = document.getElementById('skills');
-    if (element) {
-      observer.observe(element);
+    let element: HTMLElement | null = null;
+    if (typeof document !== 'undefined') {
+      element = document.getElementById('skills');
+      if (element) {
+        observer.observe(element);
+      }
     }
 
     return () => {

@@ -29,11 +29,13 @@ export const PerformanceMonitor = () => {
     };
 
     // Measure after page load
-    if (document.readyState === 'complete') {
-      measurePerformance();
-    } else {
-      window.addEventListener('load', measurePerformance);
-      return () => window.removeEventListener('load', measurePerformance);
+    if (typeof document !== 'undefined') {
+      if (document.readyState === 'complete') {
+        measurePerformance();
+      } else {
+        window.addEventListener('load', measurePerformance);
+        return () => window.removeEventListener('load', measurePerformance);
+      }
     }
   }, []);
 

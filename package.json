@@ -71,6 +71,7 @@
     "@react-three/drei": "^9.93.0",
     "@react-three/fiber": "^8.15.13",
     "clsx": "^2.1.0",
+    "critters": "^0.0.23",
     "framer-motion": "^10.17.12",
     "next": "14.2.15",
     "react": "^18",
