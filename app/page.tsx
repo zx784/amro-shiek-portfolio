@@ -2,7 +2,8 @@
 
 import { Hero } from "@/components/main/hero";
 import { Skills } from "@/components/main/skills";
-import { Encryption } from "@/components/main/encryption";
+import dynamic from "next/dynamic";
+const Encryption = dynamic(() => import("@/components/main/encryption").then(mod => mod.Encryption), { ssr: false });
 // import { Projects } from "@/components/main/projects";
 
 export default function Home() {
