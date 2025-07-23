@@ -2,7 +2,7 @@
 
 import { Hero } from "@/components/main/hero";
 import { Skills } from "@/components/main/skills";
-// import { Encryption } from "@/components/main/encryption";
+import { Encryption } from "@/components/main/encryption";
 // import { Projects } from "@/components/main/projects";
 
 export default function Home() {
@@ -11,7 +11,7 @@ export default function Home() {
       <div className="flex flex-col gap-20">
         <Hero />
         <Skills />
-        {/* <Encryption /> */}
+        <Encryption />
         {/* <Projects /> */}
       </div>
     </main>
