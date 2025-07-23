@@ -4,7 +4,7 @@ import { Hero } from "@/components/main/hero";
 import { Skills } from "@/components/main/skills";
 import dynamic from "next/dynamic";
 const Encryption = dynamic(() => import("@/components/main/encryption").then(mod => mod.Encryption), { ssr: false });
-// import { Projects } from "@/components/main/projects";
+const Projects = dynamic(() => import("@/components/main/projects").then(mod => mod.Projects), { ssr: false });
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
         <Hero />
         <Skills />
         <Encryption />
-        {/* <Projects /> */}
+        <Projects />
       </div>
     </main>
   );
