@@ -34,7 +34,7 @@ export const HeroContent = () => {
           variants={slideInFromLeft(0.5)}
           className="font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white max-w-[700px] w-auto h-auto leading-tight"
         >
-          Hi, I'm Amro Shiek — turning <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">data</span> into decisions and ideas into <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400">products</span>.
+          Hi, I&apos;m Amro Shiek — turning <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">data</span> into decisions and ideas into <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400">products</span>.
         </motion.h1>
 
         {/* Subheadline */}
@@ -50,7 +50,7 @@ export const HeroContent = () => {
           variants={slideInFromLeft(1)}
           className="italic text-gray-400 text-sm sm:text-base mb-4"
         >
-          "I work smart and hard — delivering high-quality results in less time."
+          &quot;I work smart and hard — delivering high-quality results in less time.&quot;
         </motion.p>
 
         {/* Buttons */}
